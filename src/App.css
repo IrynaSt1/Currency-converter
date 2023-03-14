@@ -1,38 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Sono&display=swap");
+* {
+  background-color: #212121;
+  font-family: "Sono", sans-serif;
+}
 .App {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  min-height: 30vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+}
+.uah_rates {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 500px;
+  height: 50px;
+  background-color: #171717;
+  border: 1px solid rgba(1, 1, 1, 0.601);
+  border-radius: 16px;
+}
+
+.uah_rates div {
+  background-color: #171717;
+}
+
+.box {
   display: flex;
   flex-direction: column;
+  gap: 10px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: #171717;
+  border-radius: 20px;
+  width: 500px;
+  height: 300px;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  color: rgb(5, 122, 255);
+  font-size: 24px;
+  background-color: #171717;
+}
+
+.field {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5em;
+  border-radius: 15px;
+  width: 300px;
+  padding: 1em;
+  border: none;
+  outline: none;
   color: white;
+  background-color: #171717;
+  box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+}
+.field:hover {
+  box-shadow: 0 0 0 0.15vw rgb(37, 146, 218);
+}
+.arrow {
+  background-color: #171717;
+  width: 25px;
+  height: 25px;
+  color: rgb(5, 122, 255);
 }
 
-.App-link {
-  color: #61dafb;
+.input-field {
+  background: none;
+  border: none;
+  outline: none;
+  padding-left: 20px;
+  color: rgb(227, 227, 240);
+  font-size: 18px;
+  width: 45%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(163deg, #8800ff 0%, #00a6ff 100%);
+  border-radius: 22px;
+  width: 500px;
+  height: 600px;
+  transition: all 0.3s;
+}
+
+.card2 {
+  border-radius: 0;
+  transition: all 0.2s;
+}
+
+.card2:hover {
+  transform: scale(0.98);
+  border-radius: 20px;
+}
+
+.card:hover {
+  box-shadow: 0px 0px 30px 1px rgba(34, 0, 255, 0.3);
+}
+@media (max-width: 767px) {
+  .uah_rates {
+    width: 300px;
   }
-  to {
-    transform: rotate(360deg);
+  .box {
+    width: 300px;
+    height: 250px;
+  }
+  .card {
+    width: 300px;
+    height: 250px;
+  }
+  h1 {
+    font-size: 20px;
+    background-color: #171717;
+    margin-top: 30px;
+  }
+  .field {
+    width: 200px;
+    height: 15px;
+  }
+  .input-field {
+    font-size: 16px;
+  }
+  .arrow {
+    width: 18px;
+    height: 18px;
   }
 }
